@@ -1,0 +1,12 @@
+name: postera
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - rdkit
+  - scikit-learn
