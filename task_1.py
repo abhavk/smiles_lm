@@ -73,7 +73,7 @@ def simManhattan(a_arr, b_arr):
     return (1-val)
     
 def simTanimoto(a_arr, b_arr):
-    val = bothAB(a_arr, b_arr)/(mod(a_arr)+mod(b_arr)+bothAB(a_arr, b_arr))
+    val = bothAB(a_arr, b_arr)/(mod(a_arr)+mod(b_arr)-bothAB(a_arr, b_arr))
     return val
     
 def simCosine(a_arr, b_arr):
