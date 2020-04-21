@@ -86,9 +86,6 @@ ROF_df['HBD'] = sub_df.apply(rowToHBD, axis=1)
 ROF_df['HBA'] = sub_df.apply(rowToHBA, axis=1)
 less_one_violations = (ROF_df.apply(calculateViolations, axis=1) <=1)*1
 ROF_df['ROF_violations'] = less_one_violations
-print(ROF_df.head())
-print(" ... ")
-print(ROF_df.tail(3))
 
 SARS_mol = Chem.MolFromSmiles('O=C(c1cc(=O)[nH]c2ccccc12)N1CCN(c2ccccc2)CC1')
 SARS_fp = np.array(AllChem.GetMorganFingerprintAsBitVect(SARS_mol,3,nBits=1024))
